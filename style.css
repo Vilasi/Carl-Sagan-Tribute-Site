@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+
+}
+
+
+
+/* box-sizing: border-box    =>  This makes it so the madding & border are taken into consideration for width/height. */
+
+
+@media screen and (min-width: 760px) {
+.content {
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-columns: auto 1fr;
+    margin: 0 auto;
+    /* min-width: 760px; */
+    /* grid-gap: 40px; */
+    box-sizing: border-box;
+    grid-template-areas: 
+    "header header"
+    "img aside"
+    "main main"
+    "footer footer";
+}
+}
+.content div {
+   /* padding: 30px; */
+}
+
+#header {
+    grid-area: header;
+    background-color: #222f2c;
+    color: #C0B3A0;
+    text-align: center;
+    
+    
+}
+#header h5 {
+    color: #C0B3A0;
+}
+
+#img-div {
+    grid-area: img;
+    background-color: #222f2c;
+    
+}
+#img-div img {
+    height: auto;
+    width: 100%;
+    max-width: 450px;
+    
+    margin: 50px;
+    border: 10px solid black;
+    /* height: auto;
+    width: 100%;
+    max-width: 650px; */
+}
+
+#aside {
+    grid-area: aside;
+    background-color:#222f2c;;
+    color: #C0B3A0;
+}
+#main {
+    grid-area: main;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+
+
+
+
+
+    /* 
+    Gold Tone: #C0B3A0;
+    Purple Tone: #3F3250;
+    Dark Navy Tone: #22252C
+    Coral Orange: #E14658 
+    */
+
+
+
+
+
+
+  
